@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2016-02-02T23:29:14</date>
+  <millis>1454435954351</millis>
+  <sequence>0</sequence>
+  <logger>webcrawler.Webcrawler</logger>
+  <level>INFO</level>
+  <class>webcrawler.Webcrawler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Mails are downloading. Things are in good shape</message>
+</record>
+<record>
+  <date>2016-02-02T23:30:28</date>
+  <millis>1454436028116</millis>
+  <sequence>1</sequence>
+  <logger>webcrawler.Webcrawler</logger>
+  <level>INFO</level>
+  <class>webcrawler.Webcrawler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Mails are downloading. Things are in good shape</message>
+</record>
+<record>
+  <date>2016-02-02T23:31:20</date>
+  <millis>1454436080983</millis>
+  <sequence>2</sequence>
+  <logger>webcrawler.Webcrawler</logger>
+  <level>SEVERE</level>
+  <class>webcrawler.Webcrawler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Network issue</message>
+  <exception>
+    <message>java.net.SocketTimeoutException: Read timed out</message>
+    <frame>
+      <class>java.net.SocketInputStream</class>
+      <method>socketRead0</method>
+    </frame>
+    <frame>
+      <class>java.net.SocketInputStream</class>
+      <method>socketRead</method>
+      <line>116</line>
+    </frame>
+    <frame>
+      <class>java.net.SocketInputStream</class>
+      <method>read</method>
+      <line>170</line>
+    </frame>
+    <frame>
+      <class>java.net.SocketInputStream</class>
+      <method>read</method>
+      <line>141</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedInputStream</class>
+      <method>fill</method>
+      <line>246</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedInputStream</class>
+      <method>read1</method>
+      <line>286</line>
+    </frame>
+    <frame>
+      <class>java.io.BufferedInputStream</class>
+      <method>read</method>
+      <line>345</line>
+    </frame>
+    <frame>
+      <class>sun.net.www.http.HttpClient</class>
+      <method>parseHTTPHeader</method>
+      <line>704</line>
+    </frame>
+    <frame>
+      <class>sun.net.www.http.HttpClient</class>
+      <method>parseHTTP</method>
+      <line>647</line>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection</class>
+      <method>getInputStream0</method>
+      <line>1536</line>
+    </frame>
+    <frame>
+      <class>sun.net.www.protocol.http.HttpURLConnection</class>
+      <method>getInputStream</method>
+      <line>1441</line>
+    </frame>
+    <frame>
+      <class>webcrawler.TransmitData</class>
+      <method>getResponse</method>
+      <line>24</line>
+    </frame>
+    <frame>
+      <class>webcrawler.Webcrawler</class>
+      <method>messageParsingAndDownload</method>
+      <line>329</line>
+    </frame>
+    <frame>
+      <class>webcrawler.Webcrawler</class>
+      <method>main</method>
+      <line>173</line>
+    </frame>
+  </exception>
+</record>
+</log>
